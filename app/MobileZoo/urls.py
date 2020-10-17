@@ -19,9 +19,9 @@ from searchImage import views as searchImage_views
 from animalInfo import views as animalInfo_views
 
 urlpatterns = [
-    path('upload/', searchImage_views.upload),
-    path('getStatus/', searchImage_views.getStatus),
-    path('animalInfo/<str:id>/', animalInfo_views.index),
-    path('getPic/<str:id>/', searchImage_views.getPic),
-    path('admin/', admin.site.urls),
+    path("upload/", searchImage_views.upload),
+    path("getStatus/", searchImage_views.getStatus),
+    path("animalInfo/<str:id>/", animalInfo_views.index),
+    path("getPic/<str:id>/", searchImage_views.getPic),
+    path("admin/", admin.site.urls),
 ]
