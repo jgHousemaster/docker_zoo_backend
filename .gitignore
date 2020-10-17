@@ -134,3 +134,4 @@ detector/
 .DS_Store
 
 .idea/
+*.pyc
