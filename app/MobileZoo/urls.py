@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from searchImage import views as searchImage_views
 from animalInfo import views as animalInfo_views
+from searchModel import views as searchModel_views
 
 urlpatterns = [
     path("upload/", searchImage_views.upload),
@@ -24,4 +25,5 @@ urlpatterns = [
     path("animalInfo/<str:id>/", animalInfo_views.index),
     path("getPic/<str:id>/", searchImage_views.getPic),
     path("admin/", admin.site.urls),
+    path("reconstruct/", searchModel_views.requestModel),
 ]
