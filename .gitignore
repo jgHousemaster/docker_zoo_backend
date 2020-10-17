@@ -129,11 +129,11 @@ dmypy.json
 .pyre/
 
 # detection module
-detector/
-YOLOv4/
+object_detector/
 
 .DS_Store
 
 .idea/
 *.pyc
+*.weights
 migrations/
